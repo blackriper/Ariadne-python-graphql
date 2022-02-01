@@ -1,0 +1,1 @@
+# Ariadne-python-graphql
