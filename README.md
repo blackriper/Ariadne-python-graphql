@@ -1,6 +1,6 @@
 # Ariadne-python-graphql
 
-Este proyecto fue desarrollado  con [Ariadne](https://ariadnegraphql.org/) y [Graphql](https://graphql.org/learn/) .
+Este proyecto fue desarrollado  con [Ariadne](https://ariadnegraphql.org/) y [Graphql](https://graphql.org/learn/) conectandose a [MongoDB](https://www.mongodb.com/atlas/database) 
 
 
 # Virtual environment
