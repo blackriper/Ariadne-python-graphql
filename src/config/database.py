@@ -1,12 +1,12 @@
 from dotenv import load_dotenv
-import pymongo
+from mongoengine import connect
 import os
 
 load_dotenv()
+db=None
 
-client= pymongo.MongoClient(os.environ['MONGO_URI'],serverSelectionTimeoutMS=5000)
-
-try:
-     db=client["Kawai-app"]
-except:
-    print("Unable to connect to the server.")
+def conexion_mongodb():
+     try:
+      db=connect(host=os.environ['MONGO_URI'])   
+     except:
+      print("Unable to connect to the server.")

@@ -1,0 +1,45 @@
+type Query{
+    Animes:[Anime!]!
+    getAnime(id:ID!):Anime!
+    Mangas:[Manga!]!
+    getManga(id:ID!):Manga!
+    Favsanime:[Anime!]!
+    Favsmanga:[Manga!]!
+    Genreanime(genre:String!):[Anime!]!
+    Genremanga(genre:String!):[Manga!]!
+}
+
+
+
+type Mutation {
+   newAnime(anime: NewAnimeInput!):String!
+   newManga(manga:NewMangaInput!):String!
+   addFavorite(id:ID!,classi:Classification):String!
+   deleteFavorite(id:ID!,classi:Classification):String!
+    
+}
+
+
+#input para mutaciones
+input NewAnimeInput{
+    title:String!
+    cover:String!
+    description:String!
+    genre:[String!]!
+    rank:String!
+    chapters:Int!
+    sequel:[String!]!
+    prequels:[String!]!
+    favorite:Boolean
+}
+
+input NewMangaInput{
+    title:String!
+    cover:String!
+    description:String!
+    genre:[String!]!
+    rank:String!
+    chapters:Int!
+ }
+
+

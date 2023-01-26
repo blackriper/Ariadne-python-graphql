@@ -1,0 +1,49 @@
+interface Struct{
+    _id:ID
+    title:String!
+    cover:String!
+    description:String!
+    type:String!
+    genre:[String!]!
+    rank:String!
+    favorite:Boolean!
+    chapters:Int!
+}
+
+
+
+
+type Anime implements Struct{
+    _id:ID
+    title:String!
+    cover:String!
+    description:String!
+    type:String!
+    genre:[String!]!
+    rank:String!
+    favorite:Boolean!
+    chapters:Int!
+    sequel:[Anime!]!
+    prequels:[Anime!]!
+}
+
+type Manga implements Struct{
+    _id:ID
+    title:String!
+    cover:String!
+    description:String!
+    type:String!
+    genre:[String!]!
+    rank:String!
+    favorite:Boolean!
+    chapters:Int!  
+}
+
+
+
+
+#enum de datos
+enum Classification{
+    ANIME
+    MANGA
+}
