@@ -15,3 +15,4 @@ app=CORSMiddleware(GraphQL(schema,error_formatter=my_format_error),
                           allow_methods=("GET", "POST", "OPTIONS"))
 
 
+# configuramos los cords para poder comunicarnos en el mismo local host
