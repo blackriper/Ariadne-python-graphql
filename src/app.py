@@ -1,4 +1,3 @@
-from msilib import schema
 from ariadne import  make_executable_schema
 from ariadne.asgi import GraphQL
 from starlette.middleware.cors import CORSMiddleware
