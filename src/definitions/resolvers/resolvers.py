@@ -1,5 +1,4 @@
 from ariadne import ObjectType
-from config.database import db
 from controllers import (find_one_manga,
                          find_all_manga,
                          find_all_anime,
